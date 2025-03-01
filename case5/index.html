@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="../style/normalize.css">
 
     <style>
-        section{
-            width:1000px;
-            height:500px;
+        body{
+            width:100vw;
+            height:100vh;
             border:1px solid black;
             display: grid;
             grid-template-columns: repeat(4,1fr);
+            overflow: hidden;
         }
 
-        section > div{
+        body > div{
             background: navy;
             border: 1px solid black;
             color: white;
@@ -22,46 +23,46 @@
             text-align: center ;
         }
 
-        section > div:nth-child(1){
+        body > div:nth-child(1){
             background: darkred;
         }
-        section > div:nth-child(2){
+        body > div:nth-child(2){
             background: darkgreen;
         }
-        section > div:nth-child(3){
+        body > div:nth-child(3){
             background: red;
         }
-        section > div:nth-child(4){
+        body > div:nth-child(4){
             background: #3f3b3b;
         }
-        section > div:nth-child(5){
+        body > div:nth-child(5){
             background: deeppink;
         }
-        section > div:nth-child(6){
+        body > div:nth-child(6){
             background: blue;
         }
-        section > div:nth-child(7){
+        body > div:nth-child(7){
             background: darkred;
         }
-        section > div:nth-child(8){
+        body > div:nth-child(8){
             background: hotpink;
         }
-        section > div:nth-child(9){
+        body > div:nth-child(9){
             background: #3f3b3b;
         }
-        section > div:nth-child(10){
+        body > div:nth-child(10){
             background:yellow;
         }
-        section > div:nth-child(11){
+        body > div:nth-child(11){
             background: aquamarine;
-        }  section > div:nth-child(12){
+        }
+        body > div:nth-child(12){
             background: aqua;
         }
 
     </style>
 </head>
 <body>
-<section>
     <div></div>
     <div></div>
     <div></div>
@@ -74,7 +75,6 @@
     <div></div>
     <div></div>
     <div></div>
-</section>
 </body>
 </html>
 
