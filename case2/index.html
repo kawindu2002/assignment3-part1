@@ -1,162 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>case2</title>
-        <link rel="stylesheet" href="../style/normalize.css">
 
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            header {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 30px;
-                background: white;
-            }
-            .nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-            .nav{
-                position: absolute;
-                right: 0;
-                top: 12px;
-            }
-            .nav ul li {
-                margin: 0 15px;
-                float: left;
-            }
-            .nav ul li a {
-                display: block;
-                color: black;
-                text-align: center;
-                padding: 6px 8px;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 15px;
-                font-family:  Arial, Helvetica, sans-serif;
-            }
-            .container {
-                display: flex;
-                width: 100%;
-            }
-            .sidebar {
-                width: 300px;
-                background: rebeccapurple;
-                padding: 20px;
-                color: white;
-                min-height: 82vh;
-            }
-            .sidebar ul {
-                list-style: none;
-            }
-            .sidebar ul li {
-                margin: 15px 10px;
-            }
-            .sidebar ul li a {
-                text-decoration: none;
-                color: white;
-                font-family: Arial;
+<head>
+    <meta charset="UTF-8">
+    <title>case2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <style>
+        .navbar{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            margin-top: 0;
+        }
 
-            }
-            .mainbar{
-                flex-grow: 1;
-                padding: 3px;
-                border-top: 5px solid rebeccapurple;
-                display: flex;
-                gap: 1px;
-                position:  sticky;
-            }
-            .image-box img {
-                width: 320px;
-                height: 200px;
-            }
-            main{
-                width:1000px;
-            }
-            .content{
-                padding: 10px;
-            }
-            .content p {
-                margin-bottom: 10px;
-            }
-            footer {
-                width: 100%;
-                height: 6vh;
-                background: gray;
-                text-align: center;
-                padding: 10px;
-                color: white;
-                font-family: Arial;
-                position: relative;
-            }
-            body{
-                overflow-x: hidden;
-            }
+        .navbar-nav,
+        .nave-slidebar{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
 
-        </style>
-    </head>
-    <body>
-    <header>
-        <div> <img src="../assets/logo.png" alt="Ijse Logo"> </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="sidebar">
-            <aside>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contacts</a></li>
-                    <li><a href="">About Us</a></li>
-                </ul>
-            </aside>
-        </div>
-        <main>
-            <div class="mainbar">
-                <div class="image-box"><img src="../assets/img1.png" alt="Icon"></div>
-                <div class="image-box"><img src="../assets/img1.png" alt="Icon"></div>
-                <div class="image-box"><img src="../assets/img1.png" alt="Icon"></div>
-            </div>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, corporis incidunt iste maxime nemo quaerat quia quis quos similique tempora tempore temporibus veritatis. Ducimus eaque id nam non perspiciatis.</p>
-            </div>
-        </main>
+        }
+
+        .navbar-nav{
+            justify-content: center;
+            position: absolute;
+            right: 40px;
+            gap: 15px;
+        }
+
+        .navbar-nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .section-content{
+            display: flex;
+        }
+
+        .nave-slidebar{
+            position: relative;
+            line-height: 30px;
+            padding-top: 20px;
+            flex-direction: column;
+            margin: 0;
+            width: 300px;
+            height: 83vh;
+            background-color: blue;
+        }
+
+
+        .nave-slidebar a{
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        .gif{
+            margin: 5px 0 0 10px ;
+        }
+
+        .gif-content {
+            display: flex;
+            width: 80vw;
+            height: 306.5px;
+            gap: 1px;
+            border-width: 2px;
+            border-style: solid;
+            background-color: black;
+            border-color: black;
+            border-style: solid;
+        }
+
+        .gif-content img{
+            width: 500px;
+            height: 100%;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-width: 2px;
+            background-color: gray;
+        }
+
+        footer p{
+            color: white;
+        }
+
+        p{
+            line-height: 14.5px;
+            margin-bottom: 4px;
+            margin-top: 15px;
+        }
+
+        .logo{
+            width: 130px;
+            height: auto;
+            margin-left: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+<nav class="navbar">
+    <div>
+        <img  class="logo" src="../assets/logo.png" alt="ijse" >
     </div>
-    <footer>
-        <p>Developed by IUSE</p>
+    <div class="navbar-nav">
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+        <a href="">About Us</a>
+    </div>
+</nav>
+<section class="section-content">
+    <figure class="nave-slidebar">
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+        <a href="">About Us</a>
+    </figure>
+    <figure class="gif">
+        <div class="gif-content">
+            <img src="../assets/monkey.gif" alt="gif">
+            <img src="../assets/monkey.gif" alt="gif">
+            <img src="../assets/monkey.gif" alt="gif">
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, deleniti repellendus maxime laboriosam corporis, accusantium sit itaque enim qui voluptates iste veniam earum soluta similique eos adipisci? Saepe, suscipit quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nam, excepturi nostrum doloremque quia pariatur aut a sed omnis accusantium earum debitis laborum natus perspiciatis similique in reiciendis hic unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nam, excepturi nostrum doloremque quia pariatur aut a sed omnis accusantium earum debitis laborum natus perspiciatis similique in reiciendis hic unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nam, excepturi nostrum doloremque quia pariatur aut a sed omnis accusantium earum debitis laborum natus perspiciatis similique in reiciendis hic unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quidem.</p>
+
+        </div>
+    </figure>
+</section>
+<section>
+    <footer class="footer">
+        <p>
+            Develped By IJSE
+        </p>
     </footer>
-    </body>
+</section>
+</body>
+
 </html>
